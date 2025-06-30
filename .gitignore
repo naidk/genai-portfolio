@@ -1,0 +1,25 @@
+# ⛔️ Secrets
+.env
+
+# ⚙️ Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# 📦 Environment & dependency folders
+*.egg-info/
+.eggs/
+.env/
+.venv/
+env/
+venv/
+
+# 💻 VS Code and Jupyter configs (optional)
+.vscode/
+.ipynb_checkpoints/
+
+# 🖼️ Streamlit Cloud logs (optional)
+.streamlit/
+
+# 🧪 Test files (if any)
+*.log

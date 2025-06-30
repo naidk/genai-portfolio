@@ -1,0 +1,45 @@
+# === Core LLM / GenAI ===
+langchain
+langchain-community
+openai
+faiss-cpu
+PyPDF2
+tiktoken
+
+# === PDF / Document Q&A ===
+pdfminer.six
+unstructured
+
+# === Whisper + Audio Processing ===
+whisper
+ffmpeg-python
+
+# === Hugging Face Ecosystem ===
+transformers
+datasets
+sentencepiece
+huggingface_hub
+accelerate
+safetensors
+
+# === Stable Diffusion Image Generation ===
+diffusers
+torch
+torchvision
+Pillow
+
+# === Medical NLP / BioGPT ===
+biopython
+
+# === App UI / Deployment ===
+streamlit
+gradio
+
+# === Vector Search & Retrieval ===
+chromadb
+
+# === General Data & ML Tools ===
+scikit-learn
+pandas
+numpy
+python-dotenv
