@@ -1,6 +1,7 @@
 import os
-from dotenv import load_dotenv
+import torch                     # <--- ✅ THIS MUST EXIST
 import streamlit as st
+from dotenv import load_dotenv
 from diffusers import StableDiffusionPipeline
 from langsmith import Client
 
