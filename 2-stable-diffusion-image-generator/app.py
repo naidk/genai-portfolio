@@ -17,14 +17,14 @@ st.markdown("Enter a text prompt below to generate an image using Stable Diffusi
 prompt = st.text_input("🖊️ Enter your image prompt:", placeholder="e.g., A robot walking through Times Square")
 
 # ⚙️ Load the Stable Diffusion model (cached)
-@st.cache_resource(show_spinner="Loading the Stable Diffusion model...")
+@st.cache_resource(show_spinner="Loading the Stable Diffusion model... Please wait ⏳")
 def load_sd_pipeline():
     pipe = StableDiffusionPipeline.from_pretrained(
         "CompVis/stable-diffusion-v1-4",
-        use_auth_token=hf_token,
-        torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
+        token=hf_token,
+        torch_dtype=torch.float32  # Always use CPU on Streamlit Cloud
     )
-    pipe.to("cuda" if torch.cuda.is_available() else "cpu")
+    pipe.to("cpu")
     return pipe
 
 # 🔄 Generate image on prompt
